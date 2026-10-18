@@ -1,0 +1,209 @@
+body div
+{
+    width: 90%;
+    height: 200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    block-size: 50px;
+    transition: all 0.5s ease;
+    outline: 2px solid black;
+}
+
+body div.show
+{
+    block-size: 200px;
+}
+
+div.topbar
+{
+    width: 100%;
+    flex: 1;
+    background-color: hwb(60 12% 57%);
+}
+
+div.content
+{
+    width: 100%;
+    flex: 3;
+    background-color: green;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+div.window
+{
+    width: 100%;
+    height: 100%;
+    background-color: hwb(60 16% 44%);
+}
+
+div.topbar button
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: hwb(0 33% 67%);
+    pointer-events: none;
+}
+
+div.topbar button.enabled
+{
+    background-color: lime;
+    pointer-events: all;
+}
+
+div.topbar button.clicked
+{
+    background-color: gray;
+}
+
+div.topbar h3
+{
+    color: white;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.window *
+{
+    color: white;
+}
+
+.window h5
+{
+    text-align: center;
+}
+
+.choice
+{
+    width: 30%;
+    height: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    outline: 2px solid black;
+    color: black;
+}
+
+.choice:active
+{
+    filter: brightness(80%);
+}
+
+.choice.yes
+{
+    background-color: lime;
+}
+
+.choice.no
+{
+    background-color: red;
+}
+
+#choice1 .window h2
+{
+    position: relative;
+    text-align: center;
+    bottom: -100px;
+}
+
+#choice1.no .window h2
+{
+    bottom: 20px;
+}
+
+.window input
+{
+    color: black;
+}
+
+.window select
+{
+    color: black;
+}
+
+.center
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.window h5
+{
+    height: 0px;
+}
+
+#done
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    background-color: hwb(0 36% 64%);
+    pointer-events: none;
+}
+
+input:required:invalid
+{
+    background-color: red;
+    color: white;
+}
+
+input:required:invalid::placeholder
+{
+    color: white;
+}
+
+body:has(
+    #inpDate:valid
+):has(
+    #inpHate:valid
+):has(
+    #inpLove:valid
+)
+#done
+{
+    background-color: lime;
+    pointer-events: all;
+}
+
+#code
+{
+    width: 300px;
+    height: 400px;
+    outline: 3px solid black;
+    margin-top: 30px;
+    display: block;
+}
+
+#code p
+{
+    overflow-wrap: anywhere;
+}
+
+#decode
+{
+    display: none;
+    margin-top: 30px;
+    height: 100px;
+}
+
+#decode *
+{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 10px;
+    margin-top: 10px;
+}

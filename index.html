@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Kei</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>HELLOOO!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>Can....</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>we....</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>go....</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="choice1">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>on a date? :></h5>
+                    <button id="yes1" class="choice yes">Yes</button>
+                    <br>
+                    <button id ="no1" class="choice no">No</button>
+                    <h2>Pick Yes :<</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="ac1">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>YAAAAAAYYY!!</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>When?</h5>
+                    <input type="date" id="inpDate" class="center" style="width: 75%;" required>
+                    <h5>Additional info</h5>
+                    <input id="dateAdd" class="center" style="width: 75%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>What kind of date?</h5>
+                    <select id="inpKind" class="center" style="width: 50%;">
+                        <option>Coffee</option>
+                        <option>Ice Cream</option>
+                        <option>Milktea</option>
+                        <option>Talk about life</option>
+                        <option>Other</option>
+                    </select>
+                    <h5>Additional info</h5>
+                    <input id="kindAdd" class="center" style="width: 75%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>What do we do after?</h5>
+                    <select id="inpAfter" class="center" style="width: 50%;">
+                        <option>Walk</option>
+                        <option>Talk</option>
+                        <option>Go home (sad :<)</option>
+                        <option>Spend more time together</option>
+                        <option>Other</option>
+                    </select>
+                    <h5>Additional info</h5>
+                    <input id="afterAdd" class="center" style="width: 75%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>What would you hate me to do/to see me do?</h5>
+                    <input id="inpHate" class="center" placeholder="required" style="width: 75%; height: 80px;" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>What would you love me to do/to see me do?</h5>
+                    <input id="inpLove" class="center" placeholder="Required" style="width: 75%; height: 80px;" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="topbar">
+                <button>↓</button>
+                <h3>?</h3>
+            </div>
+            <div class="content">
+                <div class="window">
+                    <h5>Any additional opinions?</h5>
+                    <input id="inpAdd" class="center" style="width: 75%; height: 80px;">
+                </div>
+            </div>
+        </div>
+        <button id="done" onClick="generateCode()">Done</button>
+        <div id="code">
+            <button onClick="copyCode()">Copy</button>
+            <p id="codeDisplay"></p>
+        </div>
+        <div id="decode">
+            <input id="codeBox">
+            <button onClick="copyDecoded()">Copy decoded</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
